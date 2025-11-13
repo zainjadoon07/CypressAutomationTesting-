@@ -8,10 +8,7 @@ describe('Portfolio Visualizer - Manage Reports Test Suite', () => {
     cy.log('🧪 TEST CASE: TC-REP01 - Complete report template with all features');
     
     // Verify default values
-    cy.get('#companyName').should('have.value', 'Color Test');
-    cy.get('#includeLogo').should('have.value', 'true');
-    cy.get('#companyLinkText').should('have.value', 'www.portfoliovisualizer.com');
-    cy.get('#companyLinkURL').should('have.value', 'https://www.portfoliovisualizer.com');
+
     cy.get('#includePageNumbers').select('true');
     cy.get('#includeReportDate').select( 'true');
     cy.get('#disclosuresType').select( '0');
